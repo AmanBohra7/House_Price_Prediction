@@ -1,0 +1,46 @@
+body{
+    background-color: #1F2833;
+    color: aliceblue;
+}
+
+h2{
+    font-family: 'Anton', sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.form-div , .submit-button-class {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.sub-form{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#idTotalSqft{
+    width: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .sub-form {
+        flex-direction: column;
+    }
+    #idTotalSqft{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width : 1300px){
+    #idTotalSqft{
+        width: 100px;
+    }
+}

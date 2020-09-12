@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <head>
+        <h1 class="title">House Price Prediction🏠</h1>
+    </head>
+    <div class="center">
+        <img src="./images/loading.gif" alt="">
+    </div>
+    <div class="form-div">  
+        <form action="" class="new-form">
+            
+            <label for="location">location</label>
+            <select class="u-full-width" name="location" id="idLocation"  class=".selector">
+                <option value="" disabled selected hidden>Select</option>
+            </select>
+        
+            <div class="sub-form">
+
+                <label for="total_sqft">Total Sqft :</label>
+                <input type="text" name="total_sqft" , id="idTotalSqft">
+                
+                <label for="bhk">BHK :</label>
+                <select name="bhk" id="idBhk">
+                    <option value="" disabled selected hidden>Select</option>
+                </select>
+                
+                <label for="bath">Bathrooms :</label>
+                <select name="bath" id="idBath">
+                    <option value="" disabled selected hidden>Select</option>
+                </select>
+            
+            </div>
+            <button class="button-primary" id="get_button" >Predict !</button>
+        </form>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
